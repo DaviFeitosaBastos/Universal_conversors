@@ -72,7 +72,7 @@ def conversor_celsius_for_fahrenheit():
     while True:
         try:
             celsius = float(input(f"\nDigite quantos graus deseja saber em Fahrenheit: "))
-            fahrenheit = round((celsius * 9/5) + 32)
+            fahrenheit = (celsius * 9/5) + 32
             sleep(0.5)
             print(f"\n{celsius} Graus Celsius são {fahrenheit} Fahrenheit")
         except ValueError:
