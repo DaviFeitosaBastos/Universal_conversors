@@ -1,48 +1,72 @@
-# 🔄 Conversor Universal em Python
+# Universal Converter in Python
 
-Bem-vindo ao **Conversor Universal**, um projeto simples em Python que realiza conversões de unidades diretamente pelo terminal. Com uma interface interativa e suporte ao formato brasileiro de moeda, você pode converter:
+Welcome to the **Universal Converter**, a simple Python project that performs unit conversions directly in the terminal. It provides an interactive interface and supports Brazilian currency formatting. You can convert:
 
-- 🌡️ Temperatura: Celsius → Fahrenheit  
-- 🚗 Velocidade: Km/h → Mph  
-- 💰 Moeda: Reais (R$) → Dólares (USD)  
-- ⏱️ Tempo: Minutos → Horas  
-
----
-
-## 📌 Funcionalidades
-
-✔️ Conversão de unidades com entrada do usuário  
-✔️ Repetição automática com prompt de "Deseja converter outro valor?"  
-✔️ Formatação de valores em reais com `locale`  
-✔️ Compatível com Windows, macOS e Linux  
+* Temperature: Celsius → Fahrenheit
+* Speed: Km/h → Mph
+* Currency: Brazilian Real (BRL) → US Dollar (USD)
+* Time: Minutes → Hours
 
 ---
 
-## ▶️ Como executar
+## Features
 
-> Requisitos: Python 3.13.5 instalado e pip install request (Caso não tenha!)
+* Unit conversion with user input
+* Loop for repeated conversions
+* Currency formatting using `locale`
+* Compatible with Windows, macOS, and Linux
 
-1. Clone este repositório:
+---
+
+## How to Run
+
+**Requirements:** Python 3.13.5 installed
+Optional: `requests` library (install with `pip install requests` if used in your code)
+
+1. Clone the repository:
+
 ```bash
 git clone https://github.com/DaviFeitosaBastos/Conversores-Universais.git
 cd Conversores-Universais
 ```
-## Estrutura do Projeto
-conversor.py           # Código principal com os 4 conversores
-README.md              # Instruções e documentação do projeto
 
-## Observação sobre o locale
+2. Run the script:
 
-O projeto utiliza o módulo locale para formatar corretamente valores em reais:
+```bash
+python conversor.py
+```
 
-🐧 Linux/macOS: 'pt_BR.UTF-8'
+---
 
-🪟 Windows: 'Portuguese_Brazil.1252'
+## Project Structure
 
+```
+Functions.py   # Functions for each operations
+main.py    # Main script with all converters
+README.md       # Project documentation
+```
 
-## 💱 Taxa de câmbio
+---
 
-real / 5.4759           # Fique a vontade para alterar para o ptax manualmente, 
+## Locale Configuration
 
-## 👨‍💻 Autor
-Davi Feitosa Bastos (Dave)
+The project uses the `locale` module to format Brazilian currency correctly:
+
+* Linux/macOS: `pt_BR.UTF-8`
+* Windows: `Portuguese_Brazil.1252`
+
+---
+
+## Exchange Rate
+
+```
+real / 5.4759
+```
+
+You can update the exchange rate manually if needed.
+
+---
+
+## Author
+
+Davi Feitosa Bastos
